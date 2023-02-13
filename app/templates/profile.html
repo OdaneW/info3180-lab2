@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="items">
+    <div class="heading">
+        <img src="{{url_for('static', filename='mafia.jpg')}}" alt="Image showing profile picture of developer">
+        <h1>{{ name }}</h1>
+        <p>@owilliams</p>
+        <p>Clarendon, Jamaica</p>
+        <p>{{ date }}</p>
+    </div>
+    <div class="body">    
+        <p>I am a very chill person. You can ask me anything and I wont judge. So I will help in any way that I can with anything.</p>
+    </div>
+    <div class="data">
+        <table>
+            <tr>
+                <th>7</th>
+                <th>100</th>
+                <th>250</th>
+            </tr>
+            <tr>
+                <td>Posts</td>
+                <td>Following</td>
+                <td>Followers</td>
+            </tr>
+        </table>
+    </div>
+    <div class="press">
+        <button type="button">Follow</button>
+    </div>
+</div>
+
+{% endblock %}
